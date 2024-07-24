@@ -10,3 +10,7 @@ Status überprüfen             |git status
 
 ## VSC Shortcuts
 Öffnet Terminal               |STRG SHIFT Ö
+Aktuelle Zeile copy+paste     |SHIFT ALT RUNTER
+Zeile als Kommentar setzen    |STRG #
+
+## HTML Notizen
