@@ -4,20 +4,17 @@
   box-sizing: border-box;
 }
 
+/* 1rem = 16px */
+/* Orientiert sich am root  */
 :root {
   font-size: 30px;
 }
 
+/* 1em = 16px */
+/* Orientiert sich am Elternelement  */
 body {
   font-size: 20px;
 }
-
-/* 1em = 16px */
-/* Orientiert sich am Elternelement  */
-
-/* 1rem = 16px */
-/* Orientiert sich am root  */
-
 
 /* vh = viewheight / vw = viewwidth  */
 /* Bei % muss z.B. im body ein fester Wert definiert sein */
@@ -26,3 +23,5 @@ body {
   width: 100vw;
   background-color: yellow;
 }
+
+/* Feste Werte vermeiden und mit em oder rem oder vh/vw arbeiten */
