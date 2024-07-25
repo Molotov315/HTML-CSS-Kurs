@@ -1,0 +1,34 @@
+/* visited wenn link schon besucht wurde */
+a:visited{
+  color:brown
+}
+
+/* hover beim hovern über Element */
+button:hover, .title:hover{
+  color: blue;
+  background-color: orange;
+}
+
+/* active wenn geklickt */
+button:active, .title:active{
+  background-color: green;
+}
+
+/* focus wenn ausgewählt */
+input:focus{
+  background-color: red;
+  color: white;
+}
+/* :nth-child(2n) jedes zweite Element ist rot */
+.container p:nth-child(2n){
+  color: red;
+}
+/* :nth-child(3) nur das dritte Element ist grün */
+.container p:nth-child(3){
+  color: green;
+}
+
+.container p:nth-child(1),
+.container p:nth-child(5){
+  color: violet;
+}

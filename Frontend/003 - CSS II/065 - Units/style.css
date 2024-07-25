@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 30px;
+}
+
+body {
+  font-size: 20px;
+}
+
+/* 1em = 16px */
+/* Orientiert sich am Elternelement  */
+
+/* 1rem = 16px */
+/* Orientiert sich am root  */
+
+
+/* vh = viewheight / vw = viewwidth  */
+/* Bei % muss z.B. im body ein fester Wert definiert sein */
+.box {
+  height: 100vh;
+  width: 100vw;
+  background-color: yellow;
+}

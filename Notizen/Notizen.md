@@ -12,6 +12,6 @@ Status überprüfen             |git status
 Öffnet Terminal               |STRG SHIFT Ö
 Aktuelle Zeile copy+paste     |SHIFT ALT RUNTER
 Zeile als Kommentar setzen    |STRG #
-An mehreen Stellen schreiben  |ALT LMT
+An mehreren Stellen schreiben |ALT LMT
 
 ## HTML Notizen

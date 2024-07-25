@@ -1,0 +1,19 @@
+/* Normale Farben */
+.rgb{
+  color: rgb(0, 255, 0);
+}
+
+/* Für Transparenz */
+.rgba{
+  color: rgba(255, 0, 200, 0.2);
+}
+
+/* Lichtfarbe */
+.hex{
+  color: #ff0000; /* 00 - FF */
+}
+
+/* Lichtfarbe mit Transparenz */
+.hexa{
+  color: #ff000055; /* 00 - FF */
+}

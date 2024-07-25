@@ -1,0 +1,26 @@
+/* Kommentar in CSS
+Auch über mehrere Zeilen */
+
+.p1 {
+  color: red;
+  font-size: 40px;
+}
+.p2 {
+  color: blue;
+  font-size: 25px;
+}
+.b1{
+  width: 200px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.danger{
+  background-color: red;
+}
+.succsess{
+  background-color: green;
+
+}

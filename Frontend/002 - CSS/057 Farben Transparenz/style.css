@@ -1,0 +1,12 @@
+/* Wie durchsichtig (opacity) */
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  opacity: 0.5;
+}
+
+/* Wie Lichtdurchlässig */
+h1 {
+  color: rgba(255, 0, 0, 0.5);
+}
