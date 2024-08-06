@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background{
+  height: 800px;
+  /* background-image: url(../../../Notizen/Bilder/jordan.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+/* Shotcuts */
+.background{
+  background: url(../../../Notizen/Bilder/bild3.jpg) center / cover no-repeat;
+}

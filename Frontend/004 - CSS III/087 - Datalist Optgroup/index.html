@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="../../../Notizen/Bilder/nintendo.ico" type="image/x-icon">
+  <title>Datalist & Optgroup</title>
+</head>
+
+<body>
+  <h3>Datalist</h3>
+  <form>
+    <label for="browser">Welchen Browser bevorzugst du?</label>
+    <input type="text" id="browser" list="browserList">
+    <datalist id="browserList">
+      <option value="Chrome"></option>
+      <option value="Firefox"></option>
+      <option value="Safari"></option>
+      <option value="Edge"></option>
+      <option value="Opera"></option>
+    </datalist>
+  </form>
+
+  <h3>Optgroup</h3>
+  <form>
+    <label for="fruits">Welches Obst magst du am liebsten?</label>
+    <select id="fruits">
+      <optgroup label="Tropische Früchte">
+        <option>Banane</option>
+        <option>Ananas</option>
+        <option>Mango</option>
+        <option>Passionsfrucht</option>
+      </optgroup>
+      <optgroup label="Beeren">
+        <option>Himbeere</option>
+        <option>Erdbeere</option>
+        <option>Heidelbeere</option>
+        <option>Blaubeere</option>
+      </optgroup>
+      <optgroup label="Exotische Früchte">
+        <option>Kiwi</option>
+        <option>Papaya</option>
+        <option>Granatapfel</option>
+      </optgroup>
+    </select>
+  </form>
+</body>
+
+</html>

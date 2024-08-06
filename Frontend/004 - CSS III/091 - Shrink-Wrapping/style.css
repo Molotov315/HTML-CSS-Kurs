@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background{
+  height: 10em;
+  background-color: blue;
+}
+
+main{
+  border: 3px solid red;
+
+  .container{
+    border: 3px solid green;
+    width: 75%;
+    margin: auto;
+    .box{
+      height: 200px;
+      background-color: yellowgreen;
+    }
+  }
+}
+
