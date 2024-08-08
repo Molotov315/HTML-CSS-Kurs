@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="../../../Notizen/Bilder/nintendo.ico" type="image/x-icon">
+  <title>Validieren</title>
+</head>
+
+<body>
+  <form method="get" action="/test">
+    <h3>Name</h3>
+    <!-- minlength & maxlength gibt die Min & Maxlänge an wird aber von pattern ausgehebelt -->
+    <!-- pattern ist wie ein regex String und sagt an welche Zeichen verwendet werden dürfen -->
+
+    <input type="text" name="username" placeholder="Your Username" aria-label="Type your username" minlength="3"
+      maxlength="15" pattern="[a-zA-ZäöüÄÖÜ]{3,10}" required>
+    <input type="number" min="18" max="99" placeholder="Alter">
+    </form>
+</body>
+
+</html>

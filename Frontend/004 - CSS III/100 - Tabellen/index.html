@@ -6,11 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="../../../Notizen/Bilder/nintendo.ico" type="image/x-icon">
-  <title></title>
+  <title>Tabellen</title>
 </head>
 
 <body>
-<div class="box"></div>
+
+  <!-- Normale Tabelle -->
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Sebastian</td>
+      <td>Testname</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Melanie</td>
+      <td>Testname</td>
+      <td>40</td>
+    </tr>
+  </table>
+  <br>
+
+  <!-- Advance Tabellen -->
+  <table border="1">
+    <caption>
+      Users
+    </caption>
+    <thead>
+      <th colspan="2" scope="col">Name</th>
+      <th scope="col">Street</th>
+      <th scope="col">Number</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Melanie</td>
+        <td rowspan="2">Testname</td>
+        <td rowspan="2">Teststreet</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>128</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <td colspan="4">This is the footer</td>
+    </tfoot>
+  </table>
+
+
 </body>
 
 </html>

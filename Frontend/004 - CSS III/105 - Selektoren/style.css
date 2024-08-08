@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p{
+  color: green;
+}
+
+#header{
+  background-color: gray;
+}
+
+.button{
+  padding: 10px;
+}
+
+input[type="text"]{
+  background-color: yellow;
+}
+
+div, p {
+  margin-top: 1rem;
+}
+
+/* Element im Element */
+ul > li {
+  color: blue;
+}
+
+.highlight p{
+  line-height: 1.5;
+  background-color: brown;
+}
+/* Nachbar */
+h1 + p{
+  background-color: aqua;
+}
+
+/* Geschwister */
+h1 ~ p{
+  color: green;
+}
+
+li:first-child{
+  font-weight: bold;
+}
+
+li:last-child{
+  font-weight: bold;
+}
+
+li:nth-child(2){
+  color: purple;
+}
+
+div:not(.highlight){
+  background-color: black;
+}
+
+p::first-line{
+  font-weight: bold;
+}
+p::first-letter{
+  font-size: 1.5rem;
+}
+
+a[href*="example"]{
+  color: chocolate;
+}
+
+img[src$="/300"]{
+  border: 3px solid red;
+}

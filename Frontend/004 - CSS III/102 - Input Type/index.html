@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="../../../Notizen/Bilder/nintendo.ico" type="image/x-icon">
+  <title>Inputs</title>
+</head>
+
+<body>
+  <form action="#">
+    <input type="text" placeholder="Text"><br>
+    <input type="email" placeholder="Email"><br>
+    <input type="password" placeholder="Passwort"><br>
+    <input type="date"> Wähle ein Datum<br>
+    <input type="number" placeholder="Nummer"> Wähle eine Nummer<br>
+    <input type="file"> Lade eine Datei hoch<br>
+    <input type="color"> Wähle eine Farbe<br>
+    <label for="checkbox>">Checkbox</label>
+    <input type="checkbox" name="" id="" checked><br><br>
+  </form>
+
+  <!-- RADIO -->
+  <form action="/test" method="get">
+    <h3>Welche Farbe ist die Beste?</h3>
+    <label for="radio1">Rot</label>
+    <input type="radio" id="radio1" name="Lieblingsfarbe" value="red">
+    <label for="radio2">Blau</label>
+    <input type="radio" id="radio2" name="Lieblingsfarbe" value="blue" checked>
+    <label for="radio3">Grün</label>
+    <input type="radio" id="radio3" name="Lieblingsfarbe" value="green">
+
+    <!-- SELCET -->
+    <h3>Bitte auswählen</h3>
+    <label for="select1">Bitte Frucht auswählen</label>
+    <select name="favFrucht" id="select1">
+      <option value="apfel">Apfel</option>
+      <option value="bannane" selected>Bannane</option>
+      <option value="orange">Orange</option>
+      <option value="schocki">Schocki</option>
+    </select>
+
+    <h3>Langer Text</h3>
+    <textarea name="langerText" id="message" rows="4" placeholder="Deine Mitteilung" cols="40"></textarea>
+    <button type="submit">SEND</button>
+  </form>
+</body>
+
+</html>
