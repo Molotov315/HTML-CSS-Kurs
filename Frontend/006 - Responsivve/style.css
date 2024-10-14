@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5px;
+  height: 100vh;
+}
+
+
+
+/* -------------01------------- */
+.box {
+  width: 20em;
+  height: 20em;
+  border: solid 1px black;
+  background-color: yellow;
+}
+
+@media only screen and (min-width: 400px) {
+  .box {
+    background-color: red;
+  }
+}
+
+@media (min-width: 450px) {
+  .box {
+    background-color: blue;
+  }
+}
+
+/* -------------02------------- */
+.container {
+  width: 80%;
+  color: red;
+  border: solid 3px black;
+}
+
+/* -------------03------------- */
+.body03 {
+  display: flex;
+}
+
+.col {
+  border: 1px solid red;
+  width: 8.33%;
+}
+
+.col:nth-child(even) {
+  background-color: lightblue;
+}

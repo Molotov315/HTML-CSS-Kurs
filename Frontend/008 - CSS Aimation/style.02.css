@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(31, 29, 29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .cube,
+  .cirlce {
+    width: 6.25em;
+    height: 6.25em;
+  }
+
+  .item-container {
+    display: flex;
+    gap: 1em;
+    animation: rotateContainer 2s infinite;
+
+    .cube {
+      background-color: lightblue;
+      animation: cube 2s infinite;
+    }
+
+    .cirlce {
+      background-color: lightgreen;
+      border-radius: 100%;
+      animation: circle 2s infinite;
+    }
+  }
+}
+
+@keyframes rotateContainer {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  40% {
+    transform: rotate(180deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+  }
+  80% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+  }
+}
+
+@keyframes cube {
+  to {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  0% {
+    background-color: lightgreen;
+    border-radius: 100%;
+  }
+  40% {
+    background-color: lightcoral;
+    border-radius: 10%;
+  }
+  50% {
+    background-color: lightcoral;
+    border-radius: 10%;
+  }
+  80% {
+    background-color: lightgreen;
+    border-radius: 100%;
+  }
+  100% {
+  }
+}
