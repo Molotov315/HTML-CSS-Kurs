@@ -4,5 +4,26 @@
   box-sizing: border-box;
 }
 
+.hero {
+  height: 20em;
+  background-image: url("./11.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.cards-section {
+  height: 100%;
+}
 
+.col-4 {
+  display: flex;
+  justify-content: center;
+}
+
+footer{
+  background-image: url("./11.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

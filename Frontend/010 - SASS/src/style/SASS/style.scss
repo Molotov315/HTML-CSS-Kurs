@@ -1,0 +1,76 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+// SASS auslaugern und importieren
+@import "variabels";
+
+
+// Maps erstellen /Syntax beachten und am Ende ein Semikolon ;
+$colors: (
+  main-color: green,
+  second-color: blue,
+  text-color: orange,
+);
+
+// Nested Map Syntax beachten und am Ende ein Semikolon ;
+$theme: (
+  colors: (
+    primary: black,
+    second: green,
+    acctent: pink,
+  ),
+  font-sizes: (
+    small: 12px,
+    medium: 16px,
+    large: 30px,
+  ),
+);
+
+// Mixins
+@mixin button($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $pedding;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+
+  &:active {
+    color: map-get($map: $colors, $key: second-color);
+    background-color: map-get($map: $colors, $key: second-color);
+  }
+}
+
+// Function anlegen
+@function darkens($color, $amount) {
+  @return mix(#000, $color, $amount);
+}
+
+
+body {
+  // Variable benutzen
+  margin: $margin;
+  // Funktion map-get aufrufen
+  background: map-get($map: $colors, $key: main-color);
+  // Funktion map-get für Nested Maps aufrufen
+  font-size: map-get(map-get($theme, font-sizes), large);
+  color: map-get(map-get($theme, colors), acctent);
+
+  .btn {
+    @include button(red, white);
+
+    &:hover{
+      // Funktion einbauen
+      background-color: darkens($color: green, $amount: 10%)
+    }
+  }
+  .btn2 {
+    @include button(orange, yellow);
+    &:hover{
+      // Vorgefertigte Funktionen
+      background-color: darken($color: orange, $amount: 25%);
+      background-color: lighten($color: #000, $amount: 20%)
+    }
+  }
+}

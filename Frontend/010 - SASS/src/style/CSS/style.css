@@ -1,0 +1,44 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  margin: 30px;
+  background: green;
+  font-size: 30px;
+  color: pink;
+}
+body .btn {
+  background-color: red;
+  color: white;
+  padding: 15px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+body .btn:active {
+  color: blue;
+  background-color: blue;
+}
+body .btn:hover {
+  background-color: rgb(0, 115.2, 0);
+}
+body .btn2 {
+  background-color: orange;
+  color: yellow;
+  padding: 15px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+body .btn2:active {
+  color: blue;
+  background-color: blue;
+}
+body .btn2:hover {
+  background-color: rgb(127.5, 82.5, 0);
+  background-color: #333333;
+}
+
+/*# sourceMappingURL=style.css.map */
