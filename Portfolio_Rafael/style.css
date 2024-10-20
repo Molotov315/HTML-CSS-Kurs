@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+  --primary: #1f5287;
+  --primary-light: #00ccf0;
+  --primary-dark: #182b51;
+  --secondary: #ff6000;
+  --error: #d00000;
+  --warning: #ff9100;
+  --successes: #80b918;
+  --black: #000;
+  --white: #fff;
+}
+
+/* Fonts */
+@font-face {
+  font-family: Montserrat;
+  src: url(./src/fonts/Montserrat.ttf) format("truetype");
+}
+
+/* Typescaling */
+h1 {
+  font-size: 5.61rem;
+}
+
+h2 {
+  font-size: 4.209rem;
+}
+
+h3 {
+  font-size: 3.157rem;
+}
+
+h4 {
+  font-size: 2.369rem;
+}
+
+h5 {
+  font-size: 1.777rem;
+}
+
+h6 {
+  font-size: 1.333rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+
+@media (min-width: 576px) {
+  .container {
+    width: 90%
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 85%
+  }
+
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 80%
+  }
+
+  html {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 70%
+  }
+
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    width: 60%
+  }
+
+  html {
+    font-size: 1.25rem;
+  }
+}
+
+
+/* Content */
+body {
+  background-color: var(--primary-dark);
+  font-family: Montserrat;
+
+  header {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--primary-dark);
+      padding: 1rem;
+
+      a {
+        text-decoration: none;
+        color: var(--white);
+        padding: 0 1rem;
+
+        &:hover {
+          color: var(--primary-light);
+        }
+      }
+
+      .navbar-right {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .navbar-left a {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+main {
+  .home {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    height: 100vh;
+
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero-right {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .about {
+    height: 100vh;
+    .cards {
+      display: flex;
+      flex-direction: row;
+      margin: 2rem;
+    }
+  }
+
+  .skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+  }
+
+  .projects {
+    height: 100vh;
+    .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 2rem;
+    }
+  }
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 2rem 1rem 2rem;
+
+}
