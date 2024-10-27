@@ -1,0 +1,48 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Moderner Gradient Hintergrund -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- Microservices Symbol -->
+  <g transform="translate(100,100)">
+    <rect width="120" height="80" rx="10" fill="#3b82f6" opacity="0.9"/>
+    <text x="20" y="45" font-family="Arial" font-size="14" fill="white">Service 1</text>
+  </g>
+  
+  <g transform="translate(100,200)">
+    <rect width="120" height="80" rx="10" fill="#8b5cf6" opacity="0.9"/>
+    <text x="20" y="45" font-family="Arial" font-size="14" fill="white">Service 2</text>
+  </g>
+  
+  <!-- Container/Docker Symbol -->
+  <g transform="translate(300,150)">
+    <rect width="140" height="100" rx="5" fill="#2563eb" opacity="0.9"/>
+    <path d="M10 20 h120 M10 40 h120 M10 60 h120" stroke="white" stroke-width="2"/>
+    <text x="30" y="85" font-family="Arial" font-size="14" fill="white">Containers</text>
+  </g>
+  
+  <!-- CI/CD Pipeline -->
+  <g transform="translate(500,100)">
+    <path d="M20 50 h60 l20 20 l20 -20 h60" stroke="#22c55e" stroke-width="4" fill="none"/>
+    <circle cx="20" cy="50" r="10" fill="#22c55e"/>
+    <circle cx="180" cy="50" r="10" fill="#22c55e"/>
+    <text x="60" y="30" font-family="Arial" font-size="14" fill="white">CI/CD</text>
+  </g>
+  
+  <!-- GraphQL Schema Symbol -->
+  <g transform="translate(500,200)">
+    <polygon points="90,0 180,50 90,100 0,50" fill="#f43f5e" opacity="0.9"/>
+    <text x="60" y="55" font-family="Arial" font-size="14" fill="white">GraphQL</text>
+  </g>
+  
+  <!-- Verbindungslinien -->
+  <path d="M220 140 L300 150" stroke="#60a5fa" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M220 240 L300 250" stroke="#60a5fa" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M440 200 L500 225" stroke="#60a5fa" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M440 200 L500 125" stroke="#60a5fa" stroke-width="2" stroke-dasharray="5,5"/>
+</svg>

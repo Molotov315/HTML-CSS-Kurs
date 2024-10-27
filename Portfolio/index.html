@@ -2,28 +2,28 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="./src/public/favicon.ico" type="image/x-icon">
-  <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style/css/style.css" />
+  <title>Document</title>
 </head>
 
 <body>
   <header>
     <nav class="navbar">
       <div class="navbar-left">
-        <p>Rafael.</p>
+        <img class="svg logo" src="./src/public/logo.png" alt="To Home" />
       </div>
       <div class="navbar-middle">
-        <p>Web Developer</p>
+        <img class="logo" src="./src/public/slogan.png" alt="Slogan" />
       </div>
+
       <div class="navbar-right">
-        <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-          <img class="svg" src="./src/public/linkedin.svg" alt="Linkedin">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <img class="svg" src="./src/public/instagram.svg" alt="To Instagram" />
         </a>
-        <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
-          <img class="svg" src="./src/public/instagram.svg" alt="Instagram">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <img class="svg" src="./src/public/linkedin.svg" alt="To linkedin" />
         </a>
       </div>
     </nav>
@@ -42,25 +42,71 @@
   </section>
 
   <main>
-    <section id="aboutme"class="aboutme">
+    <section id="aboutme" class="aboutme">
       <h3>About Me</h3>
       <div class="cards-container">
         <div class="card-left">
-          <img src="./src/public/linkedin.svg" alt="">
+          <img src="./src/public/Self.png" alt="Logo" />
         </div>
         <div class="card-right">
-          <h6>I'm a Web Developer</h6>
-          <p>Ich bin 32 Jahre alt und bringe eine große 
-            Begeisterung für die Frontend-/ Web-Entwicklung mit. <br><br>
-             
-            Ich bin sehr kreativ und mit meiner strukturierten und 
-            präzisen Arbeitsweise sorge ich dafür, dass Projekte 
-            effizient und genau umgesetzt werden. <br><br>
-             
-            Ich arbeite sowohl gerne in einem organisierten Team 
-            als auch eigenständig. Darüber hinaus zeichne ich 
-            mich durch eine lösungsorientierte und flexible 
-            Herangehensweise aus..</p>
+          <h6>Ich bin Fullstack Developer</h6>
+          <p>
+            Ich bin 32 Jahre alt und bin sowohl im Frontend als
+            auch im Backend einsetzbar. Mit soliden Kenntnissen
+            in HTML, CSS, SASS, Bootstrap5 und JavaScript bin
+            ich vielseitig aufgestellt. Grundkenntnisse in Docker
+            und Symfony sowie erste Erfahrungen mit PHP, TWIG
+            und SQL ergänzen mein Profil. Ich arbeite strukturiert
+            und präzise und passe mich schnell an. Teamarbeit bereitet
+            mir ebenso Freude wie eigenständiges Arbeiten.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="skills">
+      <h3>My Skills</h3>
+      <div class="skills-container">
+        <div class="skill-box">
+          <div class="skill-img">
+            <img src="./src/public/frontend.png" alt="Frontend Development" />
+          </div>
+          <div class="skill-text">
+            <h6>Frontend-Entwicklung</h6>
+            <p>
+              Ich gestalte die sichtbare Seite des Webs. Mit HTML, CSS und JavaScript erschaffe ich responsive
+              Benutzeroberflächen, die nicht nur gut aussehen, sondern auch intuitiv bedienbar sind. Meine
+              SASS-Kenntnisse helfen mir dabei, effizienten und wartbaren Code zu schreiben.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-img">
+            <img src="./src/public/backend.svg" alt="Backend Development" />
+          </div>
+          <div class="skill-text">
+            <h6>Backend-Entwicklung</h6>
+            <p>
+              Mit Symfony, PHP, TWIG und JavaScript arbeite ich an der technischen Basis von Webanwendungen. Die
+              Implementierung von APIs und Datenbankstrukturen ist mittels MySQL möglich. Durch den Einsatz von Docker
+              ist die Entwicklungsumgebungen konsistent und reproduzierbar.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-img">
+            <img src="./src/public/other.svg" alt="Additional Skills" />
+          </div>
+          <div class="skill-text">
+            <h6>Weitere Kompetenzen</h6>
+            <p>
+              Auch die Shopware-Integration oder das Templating der Erlebniswelten sind für mich keine Fremdbegriffe.
+              Die Versionskontrolle mit Git ist für mich selbstverständlich.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -68,38 +114,29 @@
     <section class="newsletter">
       <div class="text-container">
         <h3>Newsletter</h3>
-        <p>lorem upsum</p>
+        <h6>Subcribe to my newsletter to stay update</h6>
       </div>
-      <form action="#" method="post">
-        <input type="email" placeholder="your@mail.com">
-        <button type="submit">Submit</button>
+      <form class="newsletter-form" action="https://formspree.io/f/moqgyway" method="POST">
+        <input type="email" placeholder="your@mail.com" name="email" />
+        <button type="submit">
+          <img src="./src/public/send.svg" alt="submit button" aria-label="click to submit your email to us" />
+        </button>
       </form>
     </section>
 
-    <section class="skills">
-      <h3>My favorite Skills</h3>
-      <div class="skills-container">
-        <div class="skill-container">
-          <div class="skill-img">IMG</div>
-          <div class="skill-desc">Lorem ipsum</div>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img">IMG</div>
-          <div class="skill-desc">Lorem ipsum</div>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img">IMG</div>
-          <div class="skill-desc">Lorem ipsum</div>
-        </div>
-      </div>
-    </section>
   </main>
-
   <footer>
-    <div class="footer-left">Left</div>
-    <div class="footer-right">Right</div>
+    <div class="footer-left">
+      <img class="svg logo" src="./src/public/logo.png" alt="Logo" />
+    </div>
+    <div class="footer-right">
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <img class="svg" src="./src/public/instagram.svg" alt="To Instagram" />
+      </a>
+      <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+        <img class="svg" src="./src/public/linkedin.svg" alt="To linkedin" />
+      </a>
+    </div>
   </footer>
 </body>
 

@@ -1,0 +1,56 @@
+.skills
+  text-align: center
+  h3
+    margin-bottom: 3rem
+
+  .skills-container
+    display: flex
+    justify-content: center
+    align-items: stretch
+    gap: 2rem
+    flex-wrap: wrap
+
+    .skill-box
+      flex: 1
+      background-color: var(--secondary)
+      padding: 2rem
+      border-radius: 8px
+      min-width: 300px
+      max-width: 400px
+      display: flex
+      flex-direction: column
+      transition: transform 0.3s ease
+
+      &:hover
+        transform: scale(1.1)
+        cursor: pointer
+
+    .skill-img
+      width: 100%
+      height: 200px
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 1rem
+
+      img
+        width: 100%
+        height: 100%
+        object-fit: contain
+
+    .skill-text
+      display: flex
+      flex-direction: column
+      flex: 1
+
+      h6
+        color: var(--realwhite)
+        margin: 1.5rem 0
+        font-size: 1.2rem
+        min-height: 2rem
+
+      p
+        color: var(--realwhite)
+        display: block
+        text-align: justify
+        flex: 1

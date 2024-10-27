@@ -1,0 +1,76 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hintergrund mit Grid -->
+  <rect width="800" height="400" fill="#020617"/>
+  <path d="M0 40 h800 M0 80 h800 M0 120 h800 M0 160 h800 M0 200 h800 M0 240 h800 M0 280 h800 M0 320 h800 M0 360 h800" 
+        stroke="#1e293b" stroke-width="1"/>
+  <path d="M40 0 v400 M80 0 v400 M120 0 v400 M160 0 v400 M200 0 v400 M240 0 v400 M280 0 v400 M320 0 v400 M360 0 v400 M400 0 v400 M440 0 v400 M480 0 v400 M520 0 v400 M560 0 v400 M600 0 v400 M640 0 v400 M680 0 v400 M720 0 v400 M760 0 v400" 
+        stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Server Racks -->
+  <rect x="50" y="50" width="200" height="300" fill="#334155" rx="5"/>
+  <rect x="300" y="50" width="200" height="300" fill="#334155" rx="5"/>
+  <rect x="550" y="50" width="200" height="300" fill="#334155" rx="5"/>
+  
+  <!-- Server Einheiten -->
+  <g id="serverUnit">
+    <rect width="180" height="40" fill="#475569" rx="3"/>
+    <circle cx="10" cy="20" r="5" fill="#22c55e"/>
+    <circle cx="30" cy="20" r="5" fill="#eab308"/>
+    <rect x="50" y="15" width="100" height="10" fill="#64748b" rx="2"/>
+  </g>
+  
+  <!-- Server 1 Units -->
+  <g transform="translate(60,70)">
+    <use href="#serverUnit"/>
+  </g>
+  <g transform="translate(60,120)">
+    <use href="#serverUnit"/>
+  </g>
+  <g transform="translate(60,170)">
+    <use href="#serverUnit"/>
+  </g>
+  
+  <!-- Server 2 Units -->
+  <g transform="translate(310,70)">
+    <use href="#serverUnit"/>
+  </g>
+  <g transform="translate(310,120)">
+    <use href="#serverUnit"/>
+  </g>
+  <g transform="translate(310,170)">
+    <use href="#serverUnit"/>
+  </g>
+  
+  <!-- Server 3 Units -->
+  <g transform="translate(560,70)">
+    <use href="#serverUnit"/>
+  </g>
+  <g transform="translate(560,120)">
+    <use href="#serverUnit"/>
+  </g>
+  <g transform="translate(560,170)">
+    <use href="#serverUnit"/>
+  </g>
+
+  <!-- Verbindungslinien -->
+  <path d="M250 90 C275 90, 275 90, 300 90" stroke="#60a5fa" stroke-width="2"/>
+  <path d="M250 140 C275 140, 275 140, 300 140" stroke="#60a5fa" stroke-width="2"/>
+  <path d="M500 90 C525 90, 525 90, 550 90" stroke="#60a5fa" stroke-width="2"/>
+  <path d="M500 140 C525 140, 525 140, 550 140" stroke="#60a5fa" stroke-width="2"/>
+
+  <!-- Datenfluss-Animationen -->
+  <circle cx="270" cy="90" r="3" fill="#2563eb">
+    <animate attributeName="cx" from="250" to="300" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="520" cy="140" r="3" fill="#2563eb">
+    <animate attributeName="cx" from="500" to="550" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Code/Terminal Fenster -->
+  <rect x="60" y="250" width="180" height="80" fill="#1e293b" rx="3"/>
+  <text x="70" y="270" font-family="monospace" fill="#4ade80" font-size="10">
+    > npm start
+    <tspan x="70" y="290">server listening on 3000</tspan>
+    <tspan x="70" y="310">connected to database</tspan>
+  </text>
+</svg>

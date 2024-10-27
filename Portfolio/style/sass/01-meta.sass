@@ -1,0 +1,58 @@
+// Meta
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+:root
+  --black: #041518
+  --white: #d4e8ec
+  --error: #c11721
+  --successes: #80b918
+  --warning: #ff9100
+  --main: #1f5287
+  --secondary: #182b51
+  --accent: #00ccf0
+  --realwhite: #fafafa
+  
+// Fonts
+@font-face
+  font-family: Montserrat
+  src: url(./../../src/fonts/Montserrat.ttf) format("truetype")
+
+@font-face
+  font-family: Agda-Regular
+  src: url("./../../src/fonts/Agda-Regular.ttf") format("truetype")
+
+@font-face
+  font-family: Agda-Bold
+  src: url("./../../src/fonts/Agda-Bold.ttf") format("truetype")
+
+body
+  font-family: Montserrat, sans-serif
+  color: var(--realwhite)
+  background-color: var(--main)
+
+// Buttons
+.btn-container
+  text-align: center
+
+a.btn-cta
+  display: inline-block
+  text-align: center
+  background-color: var(--realwhite)
+  padding: 1rem 2rem
+  border-radius: 1.25rem
+  text-decoration: none
+  color: var(--black)
+  transition: all 0.2s
+  box-shadow: 1px 1px 2px 0 rgba(49, 85, 94, 0.64), 2px 3px 4px 0 rgba(49, 85, 94, 0.55), 5px 8px 6px 0 rgba(49, 85, 94, 0.33) , 10px 14px 7px 0 rgba(49, 85, 94, 0.1), 15px 21px 7px 0 rgba(49, 85, 94, 0.01)
+
+  &:hover
+    background-color: var(--main)
+    color: var(--realwhite)
+
+  &:active
+    background-color: var(--accent)
+    color: var(--realwhite)
+    box-shadow: none
