@@ -1,0 +1,47 @@
+.newsletter
+  display: flex
+  justify-content: center
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  background-color: var(--main)
+  padding: 8rem
+  color: var(--realwhite)
+
+  .text-container
+    h3
+      font-weight: 400
+
+    h6
+      font-weight: 400
+
+      margin-bottom: 2rem
+
+  .newsletter-form
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    gap: 2rem
+    width: 20rem
+    input
+      padding: 1rem 2rem
+      border-radius: 1rem
+      border: none
+      width: 100%
+
+    button
+      border: none
+      background-color: var(--main)
+      cursor: pointer
+      transition: all 0.2s
+
+      img
+        height: 2rem
+
+      &:hover
+        transform: rotate(30deg)
+
+      &:active
+        transform: rotate(360deg)

@@ -1,0 +1,104 @@
+.skills
+  max-width: 1400px
+  margin: 0 auto
+  padding: 4rem 3rem
+
+  @media screen and (max-width: 1200px)
+    height: 140vh
+  @media screen and (max-width: 500px)
+    height: 150vh
+  @media screen and (max-width: 400px)
+    height: 160vh
+  @media screen and (max-width: 370px)
+    height: 170vh
+
+
+.skills-wrapper
+  h2
+    text-align: center
+    font-size: 4rem
+    margin: 2rem 0 5rem 0
+    color: var(--text)
+
+    @media screen and (max-width: 500px)
+      font-size: 3rem
+  
+
+.skills-container
+  display: flex
+  justify-content: space-between
+  gap: 4rem
+
+  @media screen and (max-width: 1200px)
+    flex-direction: column
+    gap: 2rem
+    display: flex
+    align-items: center
+
+.skills-left,
+.skills-right
+  flex: 0 0 45%
+
+  h4
+    color: var(--text)
+    margin-bottom: 2rem
+    &:hover
+      color: var(--accent)
+
+  @media screen and (max-width: 1200px)
+    width: 90%
+
+.skill-bars
+  display: flex
+  flex-direction: column
+  gap: 2rem
+
+.skill-bar
+  display: flex
+  align-items: center
+  gap: 1rem
+
+  .skill-icon
+    width: 40px
+    height: 40px
+
+.skill-progress
+  flex: 1
+  background: rgba(255, 255, 255, 0.1)
+  height: 20px
+  border-radius: 5px
+  overflow: hidden
+  position: relative
+
+  .progress
+    height: 100%
+    background: var(--accent)
+    width: 0
+    border-radius: 5px
+    position: relative
+    animation: fillBar 1.5s ease forwards
+
+    .percent
+      position: absolute
+      right: 5px
+      top: 10px
+      transform: translateY(-50%)
+      color: var(--main)
+      font-size: 0.8rem
+      font-weight: bold
+
+.skill-info
+  margin-top: -2rem
+  padding-left: calc(40px + 1rem)
+
+  p
+    font-size: 0.875rem
+    color: var(--text)
+    opacity: 0.8
+    line-height: 1.4
+
+@keyframes fillBar
+  from
+    width: 0
+  to
+    width: var(--percent)

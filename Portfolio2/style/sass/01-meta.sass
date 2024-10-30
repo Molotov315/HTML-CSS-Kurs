@@ -1,0 +1,47 @@
+// Meta
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+:root
+  --black: #041518
+  --white: #d4e8ec
+  --error: #c11721
+  --successes: #80b918
+  --warning: #ff9100
+  --main: #1f5287
+  --secondary: #182b51
+  --accent: #00ccf0
+  --realwhite: #fafafa
+  --text: #E6DDCC
+
+// Fonts
+@font-face
+  font-family: Montserrat
+  src: url(./../../src/fonts/Montserrat.ttf) format("truetype")
+
+@font-face
+  font-family: Agda-Regular
+  src: url("./../../src/fonts/Agda-Regular.ttf") format("truetype")
+
+@font-face
+  font-family: Agda-Bold
+  src: url("./../../src/fonts/Agda-Bold.ttf") format("truetype")
+
+body
+  font-family: Montserrat, sans-serif
+  color: var(--text)
+  background-color: var(--secondary)
+  overflow-x: hidden
+  width: 100%
+  min-height: 100vh
+  min-width: 320px
+
+section
+  height: 100vh
+  padding-top: 80px
+  scroll-margin-top: 80px
+
+main
+  scroll-behavior: smooth
