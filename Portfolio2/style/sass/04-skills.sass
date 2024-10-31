@@ -1,23 +1,22 @@
 .skills
   max-width: 1400px
   margin: 0 auto
-  padding: 4rem 3rem
-
-  @media screen and (max-width: 1200px)
-    height: 140vh
-  @media screen and (max-width: 500px)
-    height: 150vh
-  @media screen and (max-width: 400px)
-    height: 160vh
-  @media screen and (max-width: 370px)
-    height: 170vh
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  
 
 
 .skills-wrapper
+  width: 100%
+  max-width: 1400px
+  margin: 0 auto
+  box-sizing: border-box
   h2
     text-align: center
     font-size: 4rem
-    margin: 2rem 0 5rem 0
+    margin: 5rem 0
     color: var(--text)
 
     @media screen and (max-width: 500px)
@@ -46,7 +45,7 @@
       color: var(--accent)
 
   @media screen and (max-width: 1200px)
-    width: 90%
+    width: 100%
 
 .skill-bars
   display: flex

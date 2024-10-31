@@ -1,4 +1,3 @@
-// Meta
 *
   margin: 0
   padding: 0
@@ -12,6 +11,7 @@
   --warning: #ff9100
   --main: #1f5287
   --secondary: #182b51
+  --nav: #1a2238
   --accent: #00ccf0
   --realwhite: #fafafa
   --text: #E6DDCC
@@ -29,7 +29,12 @@
   font-family: Agda-Bold
   src: url("./../../src/fonts/Agda-Bold.ttf") format("truetype")
 
+html, body
+  min-height: 100vh
+
 body
+  display: flex
+  flex-direction: column
   font-family: Montserrat, sans-serif
   color: var(--text)
   background-color: var(--secondary)
@@ -39,9 +44,8 @@ body
   min-width: 320px
 
 section
-  height: 100vh
-  padding-top: 80px
   scroll-margin-top: 80px
 
 main
   scroll-behavior: smooth
+  padding: 0 2rem
